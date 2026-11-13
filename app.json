@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "UDAAN",
+    "slug": "udaan-child-marriage-prevention",
+    "version": "1.0.0",
+    "scheme": "udaan",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#EAF3FF",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.udaan.odisha.app"
+    },
+    "android": {
+      "package": "org.udaan.odisha.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#EAF3FF"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ]
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow UDAAN to use your location for emergency SOS sharing."
+        }
+      ]
+    ]
+  }
+}
